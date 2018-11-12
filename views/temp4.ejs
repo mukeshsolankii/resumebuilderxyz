@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title> Resume</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho|Crimson+Text" rel="stylesheet">
+	<link rel="shortcut icon" type="icon/gif" href="/images/resum.png" />
+<style>
+.mainx{
+  	max-width: 800px;
+  	margin: 0 auto;
+  	background-color: white;
+    font-family: Crimson Text;
+    box-shadow:0 0 15px 1px rgba(0, 0, 0, 1);
+	margin-top: 90px;
+}
+.pi{
+    padding: 2% 4% 0% 4%;
+    font-family: Crimson Text;
+}
+.objective{
+    padding: .2% 4% 1% 4%;
+}
+.education{
+    padding: .2% 4% 1% 4%;
+}
+.skills{
+    padding: .2% 4% 1% 4%;
+}
+.certificate{
+    padding: .2% 4% 1% 4%;
+}
+#back_to_form:hover{
+	cursor: pointer;
+}
+</style>
+</head>
+<body bgcolor="darkslategrey">
+    <!-- <h2>Email</h2> -->
+    <!-- <p style="color: red;"></p> -->
+	<div>
+		<a id="back_to_form" onclick="back_but_form()" style="position: fixed;padding:7px;border: 1.7px solid white;border-radius: 9px; background-color: #27AE60;color:white;margin-top: -54px;margin-left: 18%;text-decoration: none;font-size: 20px;width: 180px;text-align: center;">◄ Back</a>
+		<a href="/temp/4" style="position: fixed;padding:7px;border: 1.7px solid white;border-radius: 9px; background-color: red;color:white;margin-top: -54px;margin-left: 60%;text-decoration: none;font-size: 20px;width: 180px;text-align: center;" target="_blank"><i class="fa">&#xf1c1;</i> Download Pdf</a>
+	</div>
+
+    <!-- First Personal Information section  -->
+	<div class="mainx">
+		<div class="pi">
+		  <h1 style="color: #468cdd;margin-bottom: 0px;font-weight: normal;font-size: 2.5em">Template 4</h1>
+          <p>Phone:- <%= data.phone %></p>
+		  <p>Address:- <%= data.add %>.</p>
+		  <p style="margin-bottom: 5px;">Email:- <%= data.email %></p>
+		</div>
+
+		<div class="objective">
+			<h3 style="border-bottom: 1px dashed black;font-weight: normal;">OBJECTIVE</h3>
+			<p style="margin-bottom: 5px;"><%= data.obj %></p>
+		</div>
+
+    <div class="education">
+			<h3 style="border-bottom: 1px dashed black;font-weight: normal;">QUALIFICATION</h3>
+			<p style="margin-bottom: 5px;"><%= data.edu %></p>
+		</div>
+
+    <div class="skills">
+			<h3 style="border-bottom: 1px dashed black;font-weight: normal;">SKILLS</h3>
+			<p style="margin-bottom: 5px;"><%= data.skill %></p>
+		</div>
+
+    <div class="certificate">
+			<h3 style="border-bottom: 1px dashed black;font-weight: normal;">CERTIFICATIONS</h3>
+			<p style="margin-bottom: 5px;"><%= data.cert %></p>
+		</div>
+
+    <i style="font-size: 15px;margin: 2% 0% 1% 4%;color: gray;">I hereby declare that above mentioned information is correct and best to my knowledge.</i>
+
+    </div>
+</body>
+</html>
