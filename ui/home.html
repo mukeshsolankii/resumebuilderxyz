@@ -6,9 +6,9 @@
 	<link rel="shortcut icon" type="icon/gif" href="/images/resum.png" />
 	<link rel="stylesheet" href="/ui/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Diplomata+SC|Signika|Abel|Merriweather+Sans|Montserrat|Roboto+Slab:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Diplomata+SC|Signika|Abel|Merriweather+Sans|Montserrat|Roboto+Slab:700">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 	<script type="text/javascript" src="/ui/main.js"></script>
 </head>
 
@@ -59,23 +59,22 @@
 	<fieldset>
 		<h2 class="fs-title">PERSONAL INFORMATION</h2>
 		<h3 class="fs-subtitle">This is step 1</h3>
-		<input type="text" name="name" placeholder="Full Name                                                 (Eg:- Chaman singh)" id="Name" required/>
+		<input type="text" name="name" placeholder="Full Name                                                 (Eg:- Chaman singh)" id="Name" style="text-transform: capitalize;" required/>
 		<input type="text" name="email" placeholder="Email                                                     (Eg:- chaman@gmail.com)" id="Email" required/>
     <input type="text" name="phone" placeholder="Phone no.                                                     (Eg:- 9438203934)" id="Phone" required/>
 		<textarea name="add" placeholder="Address                                     (Eg:- Hno:-643,block-f,sec-23,Faridabad)" id="Address" required></textarea>
     <input type="button" name="next" class="next action-button" value="Next ➤" />
 	</fieldset>
 	<fieldset>
-		<h2 class="fs-title">QUALIFICATION</h2>
-		<h3 class="fs-subtitle">Your presence on the social network</h3>
-		<input type="text" name="twitter" placeholder="Twitter" />
-		<input type="text" name="facebook" placeholder="Facebook" />
-		<input type="text" name="gplus" placeholder="Google Plus" />
+		<h2 class="fs-title">OBJECTIVE</h2>
+		<h3 class="fs-subtitle">Your education Detail</h3>
+		<textarea style="width: 700px;height: 180px;" name="add" placeholder="Write a short Objective of yourself what you want to do. Your objective be should like -- 'Hey, I m the one you are looking for..'" id="Objective"  required></textarea>
+		
 		<input type="button" name="previous" class="previous action-button" value="◄ Previous" />
 		<input type="button" name="next" class="next action-button" value="Next ►" />
 	</fieldset>
 	<fieldset>
-		<h2 class="fs-title">Skills</h2>
+		<h2 class="fs-title">QUALIFICATIONs</h2>
 		<h3 class="fs-subtitle">Your presence on the faltu network</h3>
 		<input type="text" name="twitter" placeholder="Twitter" />
 		<input type="text" name="facebook" placeholder="Facebook" />
@@ -84,7 +83,7 @@
 		<input type="button" name="next" class="next action-button" value="Next ►" />
 	</fieldset>
 	<fieldset>
-		<h2 class="fs-title">objective</h2>
+		<h2 class="fs-title">skills</h2>
 		<h3 class="fs-subtitle">We will never sell it</h3>
 		<input type="text" name="fname" placeholder="First Name" />
 		<input type="text" name="lname" placeholder="Last Name" />
@@ -170,26 +169,34 @@
 			 <!--***************************This is the Template Section Ends****************************-->
 
 
-			<!--***************************This is the Second Top Section Starts****************************-->
+			<!--***************************This is the Second Top Section Sarts****************************-->
 	<div class="content">
-
-		<h1 style="font-size: 2.5em;font-family: 'Diplomata SC', sans-serif;color: #e9dfdf;margin-top: 120px;text-shadow: 2px 2px 2px black;cursor: pointer;">Now, It's Simple</h1>
+		<div style="height:700px;background-image: url('/images/backa.jpg');background-size: cover;background-attachment: fixed;" id="first_sec">
+		<h1 style="font-size: 2.5em;font-family: 'Diplomata SC', sans-serif;color: #e9dfdf;padding-top: 150px;text-shadow: 2px 2px 2px black;cursor: pointer;">Now, It's Simple</h1>
 		<h2 style="font-size: 2em;font-family: 'Courgette', sans-serif;color: #d3d3d3;margin-top: 15px;margin-bottom: 20px;text-shadow: 1px 1px 1px black;cursor:pointer;">To Create CV's And Resume</h2><hr width="35%" style="margin-left: 32.5%;" color="#03a679" size="3">
+		<button class="click-c progress">Create My Resume -></button>
+		</div>
 		<div class='steps'>
 			<div class='insteps'>
 				<div class="incon">
 					<p style="font-size: 2em;color: white;padding-top: 40px;font-family:'Courgette',Open Sans TTF;font-weight: 400;letter-spacing: 3px;font-size: 2.5rem;padding-bottom: 15px;text-shadow: 2px 2px 2px black;text-shadow: 2px 2px 2px black;"><b>3</b> Easy Step to Build Resume</p>
 					<hr style="margin-bottom: 7%;margin-left: 40%;" width="20%" size="3" color="skyblue" >
 					<span class="fa  div1" style="padding: 22px 27px;margin-left: 0%;">&#xf0c5;</span>
-					<b style="margin-top: 125px;margin-left: -10%;position: absolute;color: white;font-size:1em;font-family: 'Merriweather Sans',Garamond">SELECT TEMPLATE</b>
+					<b style="margin-top: 125px;margin-left: -10%;position: absolute;color: white;font-size:1em;font-family: 'Merriweather Sans',Garamond">SELECT TEMPLATE<br>
+					<i style="color: darkgray;font-size:0.8em;">Select any template<br>of resume of your<br>choise.</i>
+					</b>
 					<!--<hr style="position: absolute;margin-top: -40px;margin-left: 16%;" width="20%" size="3" color="#27AE60">-->
 					<span class="fa arr">&#xf101;</span>
 					<span class="fa  div1" style="padding: 20px 25px">&#xf044;</span>
-					<b style="margin-top: 125px;margin-left: -7%;position: absolute;color: white;font-size:1em;font-family: 'Merriweather Sans',Garamond">EDIT IT</b>
+					<b style="margin-top: 125px;margin-left: -9.5%;position: absolute;color: white;font-size:1em;font-family: 'Merriweather Sans',Garamond">EDIT IT<br>
+					<i style="color: darkgray;font-size:0.8em;">Edit the template<br>by providing your <br>infomation.</i>
+					</b>
 					<!--<hr style="position: absolute;margin-top: -40px;margin-left: 43.5%;" width="20%" size="3" color="#27AE60">-->
 					<span class="fa arr">&#xf101;</span>
 					<span class="fa  div1" style="padding: 20px 25px">&#xf019;</span>
-					<b style="margin-top: 125px;margin-left: -8%;position: absolute;color: white;font-size:1em;font-family: 'Merriweather Sans',Garamond">DOWNLOAD IT</b>
+					<b style="margin-top: 125px;margin-left: -9%;position: absolute;color: white;font-size:1em;font-family: 'Merriweather Sans',Garamond">DOWNLOAD IT<br>
+					<i style="color: darkgray;font-size:0.8em;">Then you can simply<br>download your<br>resume pdf.</i>
+					</b>
 				</div>
 			</div>
 		</div>
@@ -244,3 +251,4 @@ span.onclick = function() {
 </script>
 </body>
 </html>
+
