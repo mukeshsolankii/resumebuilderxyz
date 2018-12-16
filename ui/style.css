@@ -4,11 +4,11 @@
 html {
 	height: 1%;
 	/*Image only BG fallback*/
-	background: url('http://thecodeplayer.com/uploads/media/gs.png');
+	background: url('/images/backc.jpg');
 	/*background = gradient + image pattern combo*/
 
 	background: linear-gradient(rgba(18, 14, 18, 0.83), rgba(52, 152, 219, 0.36)),
-		url('http://thecodeplayer.com/uploads/media/gs.png');
+		url('/images/backc.jpg');
 	background-attachment: fixed;
 
 
@@ -139,16 +139,17 @@ html {
 
 .top{
 	width: 100%;
-	height: 45px;
+	height: 70px;
 	background-color: #3a3a3a;
 	border-bottom: 1px solid gray;
     position: fixed;
-	margin-top: -120px;
+	margin-top: -70px;
 	z-index: 2;
 
 }
 .top div{
 	float: left;
+	margin-top: 20px;
 }
 
 .top .menu{
@@ -162,7 +163,7 @@ html {
 	color: white;
 	padding: 3px 8px 3px 8px;
 	background-color: #3498DB;
-	margin-top: 10px;
+	margin-top: 5px;
 	font-weight: bold;
 	cursor: pointer;
 	font-size: 16px;
@@ -182,9 +183,24 @@ html {
   height: 75px;
   width: 50px;
 }
+#first_sec button{
+	margin-top: 50px;
+	padding:10px 30px;
+	font-size:1.3em;
+	font-family:'Courgette', sans-serif;
+	border:2.3px solid white;
+	border-radius:45px;
+	background-color: #f44336;
+	color: white;
+}
+#first_sec button:hover{
+	background-color: #2196f3;
+	cursor: pointer;
+	transition: 0.6s;
+}
 .content{
 	text-align: center;
-
+	margin-top: 70px;
 }
 .create{
 	padding: 15px;
@@ -194,30 +210,30 @@ html {
 	border: 1px solid #3498DB;
 	color: white;
 	font-weight: bold;
-	border-radius: 10px;
+	border-radius: 34px;
 	margin-bottom: 60px;
+	width: 260px;
 }
 .create:hover{
 	background-color: #2ebe6e;
 	border: 1px solid #2ebe6e;
-	box-shadow: 0 0 15px 1px #3498DB;
+	transition-delay: 0.3s;
 }
 .content .steps{
 	width: 100%;
-	height: 400px;
+	height: 550px;
 	background-image: url('/images/s6.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	margin-bottom: 30px;
-	margin-top: 70px;
     z-index: 3;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 }
 .content .steps .insteps{
 
 	width: 100%;
-	height: 400px;
+	height: 550px;
 	background: rgb(34, 62, 80);
 	overflow: hidden;
 	opacity: 0.9;
@@ -259,7 +275,7 @@ html {
 .template{
 	position: fixed;
 	left: 0;
-	top: 46px;
+	top: 71px;
 	width: 80%;
 	height: calc(100vh - 46px);
 	background-color: #333;
@@ -276,7 +292,7 @@ html {
 }
 .template .temp{
 	width: 100%;
-	height: calc(100vh - 46px);
+	height: calc(100vh - 71px);
 	overflow-y: scroll;
 
 }
@@ -413,11 +429,11 @@ a{
 .ent_form{
 	position: fixed;
 	left: 0;
-	top: 46px;
+	top: 71px;
 	width: 80%;
-	height: calc(100vh - 46px);
+	height: calc(100vh - 71px);
 	background-color: #333;
-	transform: translateY(-110%);
+	transform: translateY(-120%);
 	transition: transform 0.3s ease-in-out;
 	z-index: 3;
     overflow-y: scroll;
@@ -454,11 +470,11 @@ a{
 .come_soon{
 	position: fixed;
 	left: 0;
-	top: 46px;
+	top: 71px;
 	width: 80%;
-	height: calc(100vh - 46px);
+	height: calc(100vh - 71px);
 	background-color: #333;
-	transform: translateY(-110%);
+	transform: translateY(-120%);
 	transition: transform 0.3s ease-in-out;
 	z-index: 4;
     overflow-y: scroll;
@@ -494,7 +510,7 @@ a{
   color: orange;
 }
 .cross{
-  position: absolute;
+  position: fixed;
   font-size: 30px;
   margin-left:97%;
   color: lightgray;
@@ -619,3 +635,4 @@ a{
         width: 100%;
     }
 }
+
