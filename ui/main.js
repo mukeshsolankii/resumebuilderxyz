@@ -222,10 +222,14 @@ function btn_sub(){
 	 console.log("In Main.js "+temp_num);
     	// console.log('we are inside main script!!');
 		//$("#sec").load("/temp");
-		var nm = $('#Name').val();
+		var nam = $('#Name').val();
+		var nm = nam.charAt(0).toUpperCase()+ nam.slice(1);
 		var em = $('#Email').val();
 		var ph = $('#Phone').val();
 		var ad = $('#Address').val();
+		var oob = $('#Objective').val();
+		var ob = oob.charAt(0).toUpperCase()+ oob.slice(1);
+		
 		var temp_n = temp_num;
 		$.post("/temp",
 		{
@@ -233,6 +237,7 @@ function btn_sub(){
 		 	email: em,
 			phone: ph,
 			add: ad,
+			obj: ob,
 			temp_number: temp_n
 		},
 		function(data, status){
@@ -258,5 +263,7 @@ function btn_sub(){
 
 	
 	
+	
+		
 	
 	
