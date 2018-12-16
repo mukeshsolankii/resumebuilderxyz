@@ -20,6 +20,9 @@ app.get('/file',(req,res)=>{ res.sendFile(path.join(__dirname,'ui','home.html'))
 //app.get('/form',(req,res)=>{ res.sendFile(path.join(__dirname,'ui','form.html')); });
 //TEMPLATE..
 var name = "";
+var phone = "";
+var address = "";
+var email = "";
 
 function temp(num){
   if(num == 1){  
@@ -62,9 +65,9 @@ function temp(num){
         <div class="main">
           <div class="pi">
             <h1 style="color: #468cdd;margin-bottom: -10px;font-weight: normal;">${name}</h1>
-            <p>Phone:- </p>
-            <p>Address:- </p>
-            <p style="margin-bottom: 5px;">Email:-</p>
+            <p>Phone:- ${phone}</p>
+            <p style="margin-bottom: 5px;">Email:- ${email}</p>
+            <p>Address:- ${address}</p> 
           </div>
 
           <div class="objective">
@@ -132,6 +135,9 @@ app.post('/temp',(req,res)=>{
     res.render(viewName,{data: req.body});
   }else{
 	  name = req.body.name;
+	  phone = req.body.phone;
+	  address = req.body.add;
+	  email = req.body.email;
 	  viewName = "temp"+req.body.temp_number;
 	  console.log("File Name :"+viewName)
 	  res.render(viewName,{data: req.body});
